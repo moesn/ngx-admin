@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { AngularEchartsModule } from 'ngx-echarts';
 
 import { ThemeModule } from '../../@theme/theme.module';
 import { HomeComponent } from './home.component';
@@ -7,8 +6,7 @@ import { HomeComponent } from './home.component';
 
 @NgModule({
   imports: [
-    ThemeModule,
-    AngularEchartsModule,
+    ThemeModule
   ],
   declarations: [
     HomeComponent,
