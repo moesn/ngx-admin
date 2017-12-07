@@ -1,24 +1,11 @@
 /**
- * This file includes polyfills needed by Angular and is loaded before the app.
- * You can add your own extra polyfills to this file.
- *
- * This file is divided into 2 sections:
- *   1. Browser polyfills. These are applied before loading ZoneJS and are sorted by browsers.
- *   2. Application imports. Files imported after ZoneJS that should be loaded before your main
- *      file.
- *
- * The current setup is for so-called "evergreen" browsers; the last versions of browsers that
- * automatically update themselves. This includes Safari >= 10, Chrome >= 55 (including Opera),
- * Edge >= 13 on the desktop, and iOS 10 and Chrome on mobile.
- *
- * Learn more in https://angular.io/docs/ts/latest/guide/browser-support.html
- */
+ * 这个文件包含Angular需要的兼容脚本, 在app之前加载, 文件分为两部分.
+ *   1. Browser polyfills, 这些脚本在ZoneJS之前被加载，并由浏览器进行排序.
+ *   2. Application imports, 这些文件在ZoneJS之后被引用, 在主应用之前被加载.
 
-/***************************************************************************************************
- * BROWSER POLYFILLS
- */
+/***** BROWSER POLYFILLS *****/
 
-/** IE9, IE10 and IE11 requires all of the following polyfills. **/
+/** IE9, IE10, IE11需要下面的所有兼容脚本. **/
 import 'core-js/es6/symbol';
 import 'core-js/es6/object';
 import 'core-js/es6/function';
@@ -33,38 +20,25 @@ import 'core-js/es6/regexp';
 import 'core-js/es6/map';
 import 'core-js/es6/set';
 
-/** IE10 and IE11 requires the following for NgClass support on SVG elements */
-import 'classlist.js';  // Run `npm install --save classlist.js`.
+/** IE10, IE11需要下面的兼容脚本使NgClass支持SVG **/
+import 'classlist.js';
 
-/** IE10 and IE11 requires the following to support `@angular/animation`. */
-import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+/** IE10, IE11, Firefox需要下面的兼容脚本支持Angular动画 **/
+import 'web-animations-js';
 
-
-/** Evergreen browsers require these. **/
+/** 常用浏览器都需要下面的兼容脚本 **/
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 
+/***** Angular ZoneJS *****/
 
-/** ALL Firefox browsers require the following to support `@angular/animation`. **/
-// import 'web-animations-js';  // Run `npm install --save web-animations-js`.
+import 'zone.js/dist/zone';
 
+/***** APPLICATION IMPORTS *****/
 
-/***************************************************************************************************
- * Zone JS is required by Angular itself.
- */
-import 'zone.js/dist/zone';  // Included with Angular CLI.
-
-
-/***************************************************************************************************
- * APPLICATION IMPORTS
- */
-
-/**
- * Date, currency, decimal and percent pipes.
- * Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
- */
-import 'intl';  // Run `npm install --save intl`.
-import 'intl/locale-data/jsonp/en';
+/** 日期, 货币, 小数, 百分比等管道, 除Chrome, Firefox, Edge, IE11 and Safari 10之外的所有浏览器 **/
+import 'intl';
+import 'intl/locale-data/jsonp/zh';
 import 'core-js/es7/array';
 
 if (typeof SVGElement.prototype.contains === 'undefined') {

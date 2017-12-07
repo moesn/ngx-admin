@@ -52,7 +52,7 @@
     "classlist.js": "1.1.20150312",
     "core-js": "2.5.1",
     "d3": "4.8.0",
-    "echarts": "3.8.5",
+    "echarts": "^3.8.5",
     "font-awesome": "4.7.0",
     "intl": "1.2.5",
     "ionicons": "2.0.1",
